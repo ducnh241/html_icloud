@@ -6931,7 +6931,8 @@ html.no-js .form-countrycode-wrapper .form-textbox.form-countrycode-textbox-larg
 
 .form-choice-checkbox:checked+.form-label .form-choice-indicator::before,
 .form-choice-checkbox:checked+.form-label .form-choice-indicator::after {
-    content: ""
+    /*content: "";*/
+    content: '✔';
 }
 
 .form-choice-checkbox:checked+.form-label .form-choice-indicator::after {
