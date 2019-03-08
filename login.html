@@ -32,7 +32,6 @@
     <div id="sc1193" class="atv4 sc-view sc-pane sc-main overflow-visible" style="left: 0px; right: 0px; top: 0px; bottom: 0px; min-width: 950px; min-height: 700px; z-index: 2; ">
         <div id="sc1194" class="atv4 sc-view" style="left: 0px; right: 0px; top: 0px; height: 0px; z-index: 101; "></div>
         <div id="sc1197" class="atv4 sc-view apps-container-view overflow-visible" style="left: -10000px; top: -10000px; z-index: 100; width: 1745px; height: 849px;"></div>
-
         <!-- Background -->
         <div aria-hidden="true" id="sc1203" class="atv4 sc-view background-view force-webkit-acceleration" style="left: 0px; right: 0px; top: 0px; bottom: 0px; min-width: 950px; min-height: 700px; z-index: 1;">
             <div style="position: absolute; z-index: 1; height: 105.455px; width: 105.455px; top: -52px; left: -52px; background-size: 105.455px 105.455px; background-image: url('images/download1.png'); transform: translateX(5.17897px) translateY(561.287px) scale(2.40663, 2.42513) rotate(37.5076deg); opacity: 0.131763;"></div>
@@ -63,17 +62,6 @@
         <!-- End background -->
         <div class="cw-drop-target-container"><input class="cw-drop-target-file" type="file" multiple="multiple"></div>
         <div id="sc1692" class="atv4 sc-view springboard-view" style="left: 0px; width: 1745px; top: 0px; height: 805px; min-width: 950px; min-height: 700px; z-index: 50; opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px);" aria-hidden="true">
-            <div role="main" aria-label="Launchpad" id="sc1699" class="atv4 sc-view" style="left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 1; opacity: 0; transform: scale(0.95);"></div>
-            <div id="sc1701" class="atv4 icloud-controls sc-view account-menu cos-account-menu" style="right: 2px; width: 300px; top: 0px; height: 44px; z-index: 3; opacity: 0;">
-                <div role="button" aria-label="iCloud Settings &amp; Sign Out" aria-haspopup="true" title="iCloud Settings &amp; Sign Out" alt="iCloud Settings &amp; Sign Out" aria-hidden="false" id="sc1711" class="atv4 icloud-controls borderless sc-view sc-button-view account-menu large-display-text button sc-huge-size" style="left: 0px; right: 55px; top: -5px; bottom: 0px;"><label id="sc1742-label" class="sc-button-label sc-huge-size ellipsis">AccountMenu.FallbackTitle</label>
-                    <div class="chevron"></div>
-                </div>
-                <div id="sc1719" class="atv4 icloud-controls sc-view account-menu-divider" style="margin-top: -11px; right: 44px; width: 1px; top: 50%; height: 22px; "></div>
-                <div role="button" title="Giúp Đỡ và Hỗ Trợ" alt="Giúp Đỡ và Hỗ Trợ" aria-hidden="false" id="sc1721" class="atv4 icloud-controls sc-view sc-button-view sc-image-button-view image-button sc-regular-size no-min-width" style="right: 0px; width: 44px; top: 0px; bottom: 0px; ">
-                    <div class="img help-icon"></div>
-                </div>
-            </div>
-            <div id="sc1729" class="atv4 sc-view blur-overlay" style="left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 2; opacity: 1;"></div>
             <div aria-disabled="true" id="sc1732" class="atv4 sc-view icloud-text-view disabled" style="left: 13px; width: 58px; top: 0px; height: 44px;"><span class="icloud-text"></span></div>
         </div>
     </div>
@@ -103,7 +91,7 @@
                                                                 <label class="sr-only form-cell form-label" for="account_name_text_field">Đăng nhập iCloud ID Apple</label>
                                                                 <div class="form-cell">
                                                                     <div class="form-cell-wrapper">
-                                                                        <input type="text" class="form-textbox form-textbox-text" id="account_name_text_field" can-field="accountName" autocomplete="off" autocorrect="off" autocapitalize="off" aria-required="true" required="required" aria-describedby="apple_id_field_label" spellcheck="false" ($focus)="appleIdFocusHandler()" ($keyup)="appleIdKeyupHandler()" ($blur)="appleIdBlurHandler()" placeholder="ID&nbsp;Apple" autofocus="">
+                                                                        <input type="text" class="form-textbox form-textbox-text" id="account_name_text_field" can-field="accountName" autocomplete="off" autocorrect="off" autocapitalize="off" aria-required="true" required="required" placeholder="ID&nbsp;Apple" autofocus="">
                                                                         <span id="apple_id_field_label" aria-hidden="true" class=" form-label-flyout">
                                                                             ID Apple
                                                                         </span>
@@ -115,7 +103,7 @@
                                                                 <label class="sr-only form-cell form-label" for="password_text_field">Mật khẩu</label>
                                                                 <div class="form-cell">
                                                                     <div class="form-cell-wrapper">
-                                                                        <input type="password" class="form-textbox form-textbox-text" id="password_text_field" ($keyup)="passwordKeyUpHandler()" ($focus)="pwdFocusHandler()" ($blur)="pwdBlurHandler()" aria-required="true" required="required" can-field="password" autocomplete="off" placeholder="Mật khẩu" tabindex="-1">
+                                                                        <input type="password" class="form-textbox form-textbox-text" id="password_text_field" aria-required="true" required="required" can-field="password" autocomplete="off" placeholder="Mật khẩu" tabindex="-1">
                                                                         <span id="password_field_label" aria-hidden="true" class=" form-label-flyout"> Mật khẩu
                                                                         </span>
                                                                         <span class="sr-only form-label-flyout" id="invalid_user_name_pwd_err_msg" aria-hidden="true">
@@ -127,7 +115,7 @@
                                                     </div>
                                                 </div>
                                                 <div class="si-remember-password">
-                                                    <input type="checkbox" id="remember-me" class="form-choice form-choice-checkbox" {($checked)}="isRememberMeChecked">
+                                                    <input type="checkbox" id="remember-me" class="form-choice form-choice-checkbox">
                                                     <label id="remember-me-label" class="form-label" for="remember-me">
                                                         <span class="form-choice-indicator"></span> Duy trì đăng nhập
                                                     </label>
@@ -140,7 +128,7 @@
                                                         Tiếp Tục
                                                     </span>
                                                 </button>
-                                                <button id="sign-in-cancel" ($click)="_signInCancel($element)" aria-label="Đóng" aria-disabled="false" tabindex="0" class="si-button btn secondary feat-split  remember-me   link ">
+                                                <button id="sign-in-cancel" aria-label="Đóng" aria-disabled="false" tabindex="0" class="si-button btn secondary feat-split  remember-me   link ">
                                                     <span class="text">
                                                         Đóng</span>
                                                 </button>
@@ -149,7 +137,7 @@
                                                 <div class="separator "></div>
                                                 <div class="links tk-subbody">
                                                     <div class="si-forgot-password">
-                                                        <a id="iforgot-link" class="si-link ax-outline lite-theme-override" ($click)="iforgotLinkClickHandler($element)" href="https://iforgot.apple.com/password/verify/appleid" target="_blank">
+                                                        <a id="iforgot-link" class="si-link ax-outline lite-theme-override" href="https://iforgot.apple.com/password/verify/appleid" target="_blank">
                                                             Bạn đã quên ID&nbsp;Apple hoặc mật khẩu?
                                                         </a>
                                                     </div>
