@@ -130,6 +130,11 @@ html {
     	text-align: center;
     	padding-bottom: 30px;
     }
+    div.auth-footer .footer-contents .logo {
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
 
     /*Trang xác thực*/
     div#sc1680 {
