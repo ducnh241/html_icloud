@@ -4009,7 +4009,7 @@ input:-moz-ui-invalid {
     border-color: #1482d0;
     text-decoration: none
 }
-
+/*
 .button:focus,
 [data-party="third"] .signin .si-button:focus {
     box-shadow: 0 0 0 3px rgba(131, 192, 253, 0.5);
@@ -4042,7 +4042,7 @@ input:-moz-ui-invalid {
     cursor: default;
     opacity: .3
 }
-
+*/
 .button-compact {
     font-size: 12px;
     line-height: 1.33341;
