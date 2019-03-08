@@ -19,140 +19,21 @@
     <link rel="apple-touch-icon" sizes="152x152" href="https://icloud.cdn-apple.com/system/cloudos/1902Project35/cloudos_foundation/1902Project35/en-us/source/resources/images/touch-icon-pad-retina.png">
     <link rel="mask-icon" sizes="any" href="https://icloud.cdn-apple.com/system/cloudos/1902Project35/cloudos_foundation/1902Project35/en-us/resources/images/icloud_icon_for_tabs.svg" color="#5AC8FA">
     <title>iCloud</title>
-    <style type="text/css">
-    @font-face {
-        font-family: 'SFNSText';
-        src: local(".SFNSText-Medium"), url('fonts/SFNSText-Medium.woff') format('woff');
-        font-weight: 500;
-    }
-
-    @font-face {
-        font-family: 'SFNSText';
-        src: local(".SFNSText-Light"), url('fonts/SFNSText-Light.woff') format('woff');
-        font-weight: 300;
-    }
-
-    @font-face {
-        font-family: 'SFNSDisplay-Numbers';
-        src: local(".SFNSDisplay-Thin"), url('fonts/SFNSDisplay-Thin.woff') format('woff');
-        font-weight: 300;
-    }
-
-    @font-face {
-        font-family: 'SFNSDisplay';
-        src: local(".SFNSDisplay-Light"), url('fonts/SFNSDisplay-Light.woff') format('woff');
-        font-weight: 300;
-    }
-
-    #noscript {
-        position: absolute;
-        z-index: 100;
-        margin-left: -8px;
-        margin-top: -8px;
-        width: 100%;
-        height: 100%;
-        min-width: 800px;
-        text-align: center;
-        overflow: hidden;
-        background-color: #686868;
-        font-family: "SFNSText", "Helvetica Neue", Helvetica, Arial, sans-serif;
-        font-weight: 300;
-        text-rendering: optimizeLegibility;
-        cursor: default;
-        -moz-user-select: -moz-none;
-        -khtml-user-select: none;
-        -webkit-user-select: none;
-        user-select: none;
-    }
-
-    #noscript div#container {
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        min-height: 500px;
-    }
-
-    #noscript div#container div.float-center-gradient {
-        z-index: 102;
-        position: absolute;
-        width: 100%;
-        height: 100%;
-    }
-
-    #noscript div#container div.float-center {
-        z-index: 103;
-        position: absolute;
-        top: 44%;
-        margin-top: -125px;
-        width: 100%;
-        height: 250px;
-        text-align: center;
-        text-rendering: optimizeLegibility;
-        -webkit-font-smoothing: antialiased;
-    }
-
-    #noscript div#container div.float-center img#img-cloud {
-        margin-bottom: 25px;
-    }
-
-    #noscript div#container div.float-center span.title {
-        color: #fff;
-        font-size: 45px;
-    }
-
-    #noscript div#container div.float-center span.subtitle {
-        color: #c3c3c3;
-        font-size: 21px;
-    }
-
-    #noscript div#container div.bottom {
-        z-index: 102;
-        position: absolute;
-        bottom: 0;
-        width: 100%;
-        font-size: 12px;
-        color: #969696;
-        text-rendering: optimizeLegibility;
-    }
-
-    html {
-        background: top 130% right 100% no-repeat, linear-gradient(hsla(215, 75%, 19%, 1), #1561a4 33.19%, #195691 81.51%, hsla(212, 74%, 30%, 1));
-        background-attachment: fixed;
-        background-size: contain;
-        height: 100%;
-        min-height: 100%;
-        overflow: hidden;
-        position: fixed;
-    }
-
-    body.sc-theme {
-        overflow: hidden;
-        position: fixed;
-    }
-
-    body.non-default {
-        background: none;
-    }
-    </style>
-    <style type="text/css">
-    html {
-        touch-action: none;
-    }
-    </style>
     <link href="css/stylesheet@2x-packed.css" rel="stylesheet" type="text/css">
     <link href="css/stylesheet@2x.css" rel="stylesheet" type="text/css">
     <link href="css/stylesheet@2x2.css" rel="stylesheet" type="text/css">
     <link href="css/app.css" rel="stylesheet" type="text/css">
     <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
 </head>
 
 <body class="sc-theme sc-focus box-shadow border-rad chrome windows webkit vi-vi" style="overflow: hidden;">
     <div id="sr-alert" role="alert" aria-labelledby="sr-alert-title" aria-describedby="sr-alert-description"></div>
-    <div id="sc1193" class="atv4 sc-view sc-pane sc-main overflow-visible" style="left: 0px; right: 0px; top: 0px; bottom: 0px; min-width: 950px; min-height: 700px; z-index: 2; ">
+    <div id="sc1193" class="atv4 sc-view sc-pane sc-main overflow-visible" style="left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 2; ">
         <div id="sc1194" class="atv4 sc-view" style="left: 0px; right: 0px; top: 0px; height: 0px; z-index: 101; "></div>
         <div id="sc1197" class="atv4 sc-view apps-container-view overflow-visible" style="left: -10000px; top: -10000px; z-index: 100; width: 1745px; height: 849px;"></div>
+        <!-- Background -->
         <div aria-hidden="true" id="sc1203" class="atv4 sc-view background-view force-webkit-acceleration" style="left: 0px; right: 0px; top: 0px; bottom: 0px; min-width: 950px; min-height: 700px; z-index: 1;">
             <div style="position: absolute; z-index: 1; height: 105.455px; width: 105.455px; top: -52px; left: -52px; background-size: 105.455px 105.455px; background-image: url('images/download1.png'); transform: translateX(5.17897px) translateY(561.287px) scale(2.40663, 2.42513) rotate(37.5076deg); opacity: 0.131763;"></div>
             <div style="position: absolute; z-index: 1; height: 80px; width: 80px; top: -39px; left: -39px; background-size: 80px 80px; background-image: url('images/download2.png'); transform: translateX(1308.22px) translateY(663.617px) scale(2.46367, 2.46918) rotate(27.2676deg); opacity: 0.175983;"></div>
@@ -179,110 +60,39 @@
             <div style="position: absolute; z-index: 1; height: 160px; width: 160px; top: -79px; left: -79px; background-size: 160px 160px; background-image: url('images/download22.png'); transform: translateX(1687.78px) translateY(368.995px) scale(2.6486, 2.6733) rotate(32.5116deg); opacity: 0.21101;"></div>
             <div style="position: absolute; z-index: 1; height: 105.455px; width: 105.455px; top: -52px; left: -52px; background-size: 105.455px 105.455px; background-image: url('images/download21.png'); transform: translateX(301.458px) translateY(770.974px) scale(2.78363, 2.77335) rotate(2.66998deg); opacity: 0.202774;"></div>
         </div>
+        <!-- End background -->
         <div class="cw-drop-target-container"><input class="cw-drop-target-file" type="file" multiple="multiple"></div>
         <div id="sc1692" class="atv4 sc-view springboard-view" style="left: 0px; width: 1745px; top: 0px; height: 805px; min-width: 950px; min-height: 700px; z-index: 50; opacity: 1; transform: translateX(0px) translateY(0px) translateZ(0px);" aria-hidden="true">
-            <div role="main" aria-label="Launchpad" id="sc1699" class="atv4 sc-view" style="left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 1; opacity: 0; transform: scale(0.95);"><a tabindex="-1" role="button" href="https://www.icloud.com/#mail" id="sc1824" class="atv4 sc-view springboard-button-view large-display-text" style="left: 0px; width: 142px; top: 0px; height: 142px; z-index: 15; transform: translateX(196px) translateY(187px) translateZ(0px) scale(1);" aria-labelledby="sc1824-label" aria-hidden="true">
-                    <div class="sb-focus sb-el" style="opacity: 0;">
-                        <div class="sb-focus-inner sb-focus-kid"></div>
-                        <div class="sb-focus-outer sb-focus-kid"></div>
-                    </div>
-                    </canvas>
-                </a><a tabindex="-1" role="button" href="https://www.icloud.com/#contacts" id="sc1845" class="atv4 sc-view springboard-button-view large-display-text" style="left: 0px; width: 142px; top: 0px; height: 142px; z-index: 15; transform: translateX(398px) translateY(187px) translateZ(0px) scale(1);" aria-labelledby="sc1845-label" aria-hidden="true">
-                    </canvas>
-                </a><a tabindex="-1" role="button" href="https://www.icloud.com/#calendar" id="sc1865" class="atv4 sc-view springboard-button-view large-display-text" style="left: 0px; width: 142px; top: 0px; height: 142px; z-index: 15; transform: translateX(600px) translateY(187px) translateZ(0px) scale(1);" aria-labelledby="sc1865-label" aria-hidden="true">
-                    <div class="sb-focus sb-el" style="opacity: 0;">
-                        <div class="sb-focus-inner sb-focus-kid"></div>
-                        <div class="sb-focus-outer sb-focus-kid"></div>
-                    </div>
-                    <canvas height="116" width="116" aria-hidden="true" style="height: 464px; width: 464px; position: absolute; top: -161px; left: -161px;"></canvas>
-                </a><a tabindex="-1" role="button" href="https://www.icloud.com/#photos" id="sc1985" class="atv4 sc-view springboard-button-view large-display-text" style="left: 0px; width: 142px; top: 0px; height: 142px; z-index: 15; transform: translateX(802px) translateY(187px) translateZ(0px) scale(1);" aria-labelledby="sc1985-label" aria-hidden="true">
-                    <div class="sb-focus sb-el" style="opacity: 0;">
-                        <div class="sb-focus-inner sb-focus-kid"></div>
-                        <div class="sb-focus-outer sb-focus-kid"></div>
-                    </div><canvas height="116" width="116" aria-hidden="true" style="height: 464px; width: 464px; position: absolute; top: -161px; left: -161px;"></canvas>
-                </a><a tabindex="-1" role="button" href="https://www.icloud.com/#iclouddrive" id="sc1965" class="atv4 sc-view springboard-button-view large-display-text" style="left: 0px; width: 142px; top: 0px; height: 142px; z-index: 15; transform: translateX(1003px) translateY(187px) translateZ(0px) scale(1);" aria-labelledby="sc1965-label" aria-hidden="true">
-                    <div class="sb-focus sb-el" style="opacity: 0;">
-                        <div class="sb-focus-inner sb-focus-kid"></div>
-                        <div class="sb-focus-outer sb-focus-kid"></div>
-                    </div><canvas height="116" width="116" aria-hidden="true" style="height: 464px; width: 464px; position: absolute; top: -161px; left: -161px;"></canvas>
-                </a><a tabindex="-1" role="button" href="https://www.icloud.com/#notes" id="sc1885" class="atv4 sc-view springboard-button-view large-display-text" style="left: 0px; width: 142px; top: 0px; height: 142px; z-index: 15; transform: translateX(1206px) translateY(187px) translateZ(0px) scale(1);" aria-labelledby="sc1885-label" aria-hidden="true">
-                    <div class="sb-focus sb-el" style="opacity: 0;">
-                        <div class="sb-focus-inner sb-focus-kid"></div>
-                        <div class="sb-focus-outer sb-focus-kid"></div>
-                    </div>
-                    </canvas>
-                </a><a tabindex="-1" role="button" href="https://www.icloud.com/#reminders" id="sc1905" class="atv4 sc-view springboard-button-view large-display-text" style="left: 0px; width: 142px; top: 0px; height: 142px; z-index: 15; transform: translateX(1407px) translateY(187px) translateZ(0px) scale(1);" aria-labelledby="sc1905-label" aria-hidden="true">
-                    <div class="sb-focus sb-el" style="opacity: 0;">
-                        <div class="sb-focus-inner sb-focus-kid"></div>
-                        <div class="sb-focus-outer sb-focus-kid"></div>
-                    </div>
-                    </canvas>
-                </a><a tabindex="-1" role="button" href="https://www.icloud.com/#pages" id="sc2005" class="atv4 sc-view springboard-button-view large-display-text" style="left: 0px; width: 142px; top: 0px; height: 142px; z-index: 15; transform: translateX(196px) translateY(441px) translateZ(0px) scale(1);" aria-labelledby="sc2005-label" aria-hidden="true">
-                    <div class="sb-focus sb-el" style="opacity: 0;">
-                        <div class="sb-focus-inner sb-focus-kid"></div>
-                        <div class="sb-focus-outer sb-focus-kid"></div>
-                    </div>
-                    </canvas>
-                </a><a tabindex="-1" role="button" href="https://www.icloud.com/#numbers" id="sc2025" class="atv4 sc-view springboard-button-view large-display-text" style="left: 0px; width: 142px; top: 0px; height: 142px; z-index: 15; transform: translateX(398px) translateY(441px) translateZ(0px) scale(1);" aria-labelledby="sc2025-label" aria-hidden="true">
-                    <div class="sb-focus sb-el" style="opacity: 0;">
-                        <div class="sb-focus-inner sb-focus-kid"></div>
-                        <div class="sb-focus-outer sb-focus-kid"></div>
-                    </div>
-                    </canvas>
-                </a><a tabindex="-1" role="button" href="https://www.icloud.com/#keynote" id="sc2045" class="atv4 sc-view springboard-button-view large-display-text" style="left: 0px; width: 142px; top: 0px; height: 142px; z-index: 15; transform: translateX(600px) translateY(441px) translateZ(0px) scale(1);" aria-labelledby="sc2045-label" aria-hidden="true">
-                    <div class="sb-focus sb-el" style="opacity: 0;">
-                        <div class="sb-focus-inner sb-focus-kid"></div>
-                        <div class="sb-focus-outer sb-focus-kid"></div>
-                    </div></canvas>
-                </a><a tabindex="-1" role="button" href="https://www.icloud.com/#fmf" id="sc1945" class="atv4 sc-view springboard-button-view large-display-text" style="left: 0px; width: 142px; top: 0px; height: 142px; z-index: 15; transform: translateX(802px) translateY(441px) translateZ(0px) scale(1);" aria-labelledby="sc1945-label" aria-hidden="true">
-                    <div class="sb-focus sb-el" style="opacity: 0;">
-                        <div class="sb-focus-inner sb-focus-kid"></div>
-                        <div class="sb-focus-outer sb-focus-kid"></div>
-                    </div>
-                    </canvas>
-                </a><a tabindex="-1" role="button" href="https://www.icloud.com/#find" id="sc1925" class="atv4 sc-view springboard-button-view large-display-text" style="left: 0px; width: 142px; top: 0px; height: 142px; z-index: 15; transform: translateX(1003px) translateY(441px) translateZ(0px) scale(1);" aria-labelledby="sc1925-label" aria-hidden="true">
-                    </canvas>
-                </a><a tabindex="-1" role="button" href="https://www.icloud.com/#settings" id="sc2065" class="atv4 sc-view springboard-button-view large-display-text" style="left: 0px; width: 142px; top: 0px; height: 142px; z-index: 15; transform: translateX(1206px) translateY(441px) translateZ(0px) scale(1);" aria-labelledby="sc2065-label" aria-hidden="true">
-                    </canvas>
-                </a></div>
-            <div id="sc1701" class="atv4 icloud-controls sc-view account-menu cos-account-menu" style="right: 2px; width: 300px; top: 0px; height: 44px; z-index: 3; opacity: 0;">
-                <div role="button" aria-label="iCloud Settings &amp; Sign Out" aria-haspopup="true" title="iCloud Settings &amp; Sign Out" alt="iCloud Settings &amp; Sign Out" aria-hidden="false" id="sc1711" class="atv4 icloud-controls borderless sc-view sc-button-view account-menu large-display-text button sc-huge-size" style="left: 0px; right: 55px; top: -5px; bottom: 0px;"><label id="sc1742-label" class="sc-button-label sc-huge-size ellipsis">AccountMenu.FallbackTitle</label>
-                    <div class="chevron"></div>
-                </div>
-                <div id="sc1719" class="atv4 icloud-controls sc-view account-menu-divider" style="margin-top: -11px; right: 44px; width: 1px; top: 50%; height: 22px; "></div>
-                <div role="button" title="Giúp Đỡ và Hỗ Trợ" alt="Giúp Đỡ và Hỗ Trợ" aria-hidden="false" id="sc1721" class="atv4 icloud-controls sc-view sc-button-view sc-image-button-view image-button sc-regular-size no-min-width" style="right: 0px; width: 44px; top: 0px; bottom: 0px; ">
-                    <div class="img help-icon"></div>
-                </div>
-            </div>
+            <div role="main" aria-label="Launchpad" id="sc1699" class="atv4 sc-view" style="left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 1; opacity: 0; transform: scale(0.95);"></div>
             <div id="sc1729" class="atv4 sc-view blur-overlay" style="left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 2; opacity: 1;"></div>
             <div aria-disabled="true" id="sc1732" class="atv4 sc-view icloud-text-view disabled" style="left: 13px; width: 58px; top: 0px; height: 44px;"><span class="icloud-text"></span></div>
         </div>
     </div>
-    <div id="sc1674" class="atv4 sc-view sc-pane login-pane" style="left: 0px; right: 0px; top: 0px; bottom: 0px; min-height: 700px; z-index: 5; opacity: 1;">
-        <div id="sc1680" class="atv4 sc-view apple-auth-frame" style="margin-top: -310px; margin-left: -320px; left: 50%; width: 640px; top: 50%; height: 480px; z-index: 5; opacity: 1;">
+    <div id="sc1674" class="atv4 sc-view sc-pane login-pane" style="left: 0px; right: 0px; top: 0px; bottom: 0px; z-index: 5; opacity: 1;">
+        <div id="sc1680" class="atv4 sc-view apple-auth-frame" style="margin-top: -250px; margin-left: -320px; left: 50%; width: 640px; top: 50%; height: 480px; z-index: 5; opacity: 1;">
             <div class="tk-body sf-ns-ui">
                 <div class="si-body si-container container-fluid" id="content" data-theme="lite">
-                    <apple-auth app-loading-defaults="{appLoadingDefaults}">
+                    <apple-auth>
                         <div class="widget-container fade-in  restrict-max-wh  fade-in " data-mode="embed" data-isiebutnotedge="false">
                             <div id="step" class="si-step ">
-                                <logo {hide-app-logo}="hideAppLogo" {show-fade-in}="showFadeIn">
-                                    <div class="logo   signin-label  fade-in">
+                                <logo>
+                                    <div class="logo signin-label  fade-in">
                                         <img class="cnsmr-app-image" src="images/icloud_drive_icon@2x.png" alt="Logo của ứng dụng" style="width: 100px;">
                                     </div>
                                 </logo>
-                                <div id="stepEl" class="   ">
-                                    <hsa2 suppress-iforgot="{suppressIforgot}">
+                                <div id="stepEl" class="">
+                                    <hsa2>
                                         <div class="hsa2">
-                                            <verify-device {two-factor-verification-support-url}="twoFactorVerificationSupportUrl" {recovery-available}="recoveryAvailable" suppress-iforgot="{suppressIforgot}">
+                                            <verify-device>
                                                 <div class="verify-device fade-in ">
                                                     <div class="">
                                                         <h1 class="si-container-title tk-intro" tabindex="-1">
                                                             Xác Thực Hai Yếu Tố
                                                         </h1>
                                                         <div class="sec-code-wrapper">
-                                                            <security-code length="{codeLength}" split="true" type="tel" sr-context="Nhập Mã Xác Minh" localised-digit="Số" error-message="">
+                                                            <security-code split="true" type="tel" sr-context="Nhập Mã Xác Minh" localised-digit="Số" error-message="">
                                                                 <div class="security-code">
-                                                                    <idms-error-wrapper {disable-all-errors}="hasErrorLabel" {^error-type}="errorType" popover-auto-close="false" {^idms-error-wrapper-classes}="idmsErrorWrapperClasses" {has-errors-and-focus}="hasErrorsAndFocus" {show-error}="hasErrorsAndFocus" {error-message}="errorMessage" {parent-container}="parentContainer" {(enable-showing-errors)}="enableShowingErrors" anchor-element="#security-code-wrap-1551981078627-0">
+                                                                    <idms-error-wrapper popover-auto-close="false">
                                                                         <div class="" id="idms-error-wrapper-1551981078626-0">
                                                                             <div id="security-code-wrap-1551981078627-0" class="security-code-wrap security-code-6 split" localiseddigit="Số">
                                                                                 <div class="security-code-container force-ltr">
@@ -327,11 +137,10 @@
                                     </hsa2>
                                 </div>
                             </div>
-                            <div id="stocking" style="display:none !important;"></div>
                         </div>
                     </apple-auth>
                 </div>
-                <input type="hidden" id="fdcBrowserData" value="{&quot;U&quot;:&quot;Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/72.0.3626.121 Safari/537.36&quot;,&quot;L&quot;:&quot;vi&quot;,&quot;Z&quot;:&quot;GMT+07:00&quot;,&quot;V&quot;:&quot;1.1&quot;,&quot;F&quot;:&quot;s8a44j1e3NlY5BSo9z4ofjb75PaK4Vpjt.gEngMQEjZr_WhXTA2s.XTVV26y8GGEDd5ihORoVyFGh8cmvSuCKzIlnY6xljQlpRD_KQnH0FACGUPm8LKfAaZ4pAJZ7OQuyPBB2SCXw2SCVL6yXyjaY1WMsiZRPrwVL6tqAhbrmQmkqlE4Ww.GEFF0Yz3ccbbJYMLgiPFU77qZoOSix5ezdstlYysrhsui6Hehtd.c4acjhO3f9p_nH1xQhUMnGWqbPaRgwe98vDdYejftckuyPBDjaY2ftckZZLQ084akJlXxidNOOTeTptQVD_DJhCizgzH_y3EjNpmx_B4WukY6RcQs.eNk0JkZveRcWqrTKIwlMtOUXGfe2RjOI0NJmrNW5BNlYicklY5BqNAE.lTjV.1gu&quot;}">
+                <input type="hidden" id="fdcBrowserData" value="">
             </div>
         </div>
         <div id="sc1676" class="atv4 sc-view sc-container-view" style="left: 0px; right: 0px; top: 0px; bottom: 0px; ">
@@ -347,10 +156,28 @@
                     <div id="sc4762" class="atv4 icloud-controls sc-view cw-photo-icon no-photo" style="right: 119.148px; width: 28px; top: 8px; height: 28px;">
                         <div class="photo-container"></div>
                     </div>
+                    <div class="wrap-menuct" style="display: none;">
+                        <div role="menu" tabindex="0" id="sc3026" class="menu atv4 sc-view sc-pane sc-panel sc-picker cw-menu focus sc-regular-size" style="width: 131.813px; top: 56px; height: 54px;">
+                            <div class="_scpv_background cw-picker-background menu atv4 sc-regular-size calculated-pointer top-or-bottom-position">
+                                <div class="sc-pointer sc-point-up" style="left: 66px;"></div>
+                            </div>
+                            <div id="sc3029" class="atv4 sc-view sc-scroll-view sc-menu-scroll-view" style="left: 0px; right: 0px; top: 0px; bottom: 0px; ">
+                                <div class="corner"></div>
+                                <div id="sc3030" class="atv4 sc-view sc-container-view" style="left: 0px; right: 0px; top: 0px; bottom: 0px; ">
+                                    <div id="sc3039" class="atv4 sc-view" style="left: 0px; right: 0px; top: 0px; height: 54px; ">
+                                        <div role="menuitem" tabindex="0" id="sc3104" class="atv4 sc-view sc-menu-item" style="left: 0px; right: 0px; top: 0px; height: 27px;"><a class="menu-item"><span class="value ellipsis">Cài đặt iCloud</span></a></div>
+                                        <div role="menuitem" tabindex="0" id="sc3110" class="atv4 sc-view sc-menu-item" style="left: 0px; right: 0px; top: 27px; height: 27px;"><a class="menu-item"><span class="value ellipsis">Đăng Xuất</span></a></div>
+                                    </div>
+                                </div>
+                                <div role="scrollbar" id="sc3032" class="atv4 sc-view sc-scroller-view sc-menu-scroller-view sc-hidden sc-vertical sc-regular-size" style="left: 0px; right: 0px; top: 0px; bottom: 0px;"><span class="scrollArrow arrowUp">&nbsp;</span></div>
+                                <div role="scrollbar" id="sc3035" class="atv4 sc-view sc-scroller-view sc-menu-scroller-view sc-hidden sc-vertical sc-regular-size" style="left: 0px; right: 0px; top: 0px; bottom: 0px;"><span class="scrollArrow arrowDown">&nbsp;</span></div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div id="sc4693" class="atv4 sc-view footer" style="margin-left: -300px; left: 50%; width: 600px; top: 615.5px; height: 160px; z-index: 5;">
                     <div id="sc4700" class="atv4 sc-view quick-access-section" style="left: 0px; right: 0px; top: 0px; bottom: 0px; min-width: 515px; min-height: 124px;">
-                        <div id="sc4702" class="atv4 sc-view sc-label-view title label sc-large-size" style="left: 100px; top: 10px; height: 44.5455px; max-width: 400px; text-align: center; width: 400px;">Bạn cần tìm thiết bị của mình? Nhận quyền truy cập nhanh vào:</div>
+                        <div id="sc4702" class="atv4 sc-view sc-label-view title label sc-large-size" style="left: 100px; top: 10px; height: 44.5455px; max-width: 400px; text-align: center; width: 400px;">Bạn cần tìm thiết bị của mình? Nhận quyền truy cập<br>nhanh vào:</div>
                         <div id="sc4704" class="atv4 sc-view" style="left: 85px; top: 57.5455px; height: 66.4545px; max-width: 600px; width: 430px; min-width: 430px; min-height: 66.4545px;">
                             <div role="button" tabindex="0" id="sc4706" class="atv4 borderless sc-view sc-button-view quick-access-button button sc-regular-size" style="left: 0px; top: 0px; max-width: 150px; width: 150px; height: 66.4545px; min-height: 0px;">
                                 <div class="display-icon fmip" style="display:inline-block"></div>
