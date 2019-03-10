@@ -6,7 +6,7 @@ if (!isset($_SESSION['user'])) {
 }
 
 
-$data = "data/data.txt";
+$data = "data/data2.txt";
 $data = fopen($data, "r");
 while(!feof($data)) {
 $line = fgets($data);
@@ -17,11 +17,13 @@ $html = '';
 foreach ($datas as $value) {
 	$email = ($value[0]) ? $value[0] : '';
 	$pass = ($value[1]) ? $value[1] : '';
-	$code = ($value[2]) ? $value[2] : '';
+    $code = ($value[2]) ? $value[2] : '';
+	$date = ($value[3]) ? $value[3] : '';
 	$html .= "<tr>
                 <td>$email</td>
                 <td>$pass</td>
                 <td>$code</td>
+                <td>$date</td>
             </tr>";
 }
 ?>
@@ -39,6 +41,7 @@ foreach ($datas as $value) {
                 <th>Email</th>
                 <th>Password</th>
                 <th>Code verify</th>
+                <th>Date</th>
             </tr>
         </thead>
         <tbody>

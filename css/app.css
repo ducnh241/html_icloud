@@ -17167,8 +17167,8 @@ html[data-rtl='true'] .widget-container.safari-browser input[type='password'].do
 }
 
 .signin-form.fed-auth.show-password~.spinner-container.auth {
-    top: 65px;
-    right: 26px
+    top: 3px;
+    right: -67px;
 }
 
 .signin-form.fed-auth~.si-button.fed-ui {
@@ -17262,8 +17262,8 @@ html[data-rtl='true'] .widget-container.safari-browser input[type='password'].do
     padding: 0;
     margin: 0;
     border: 0;
-    top: 22px;
-    right: 26px
+    top: -40px;
+    right: -67px;
 }
 
 .signin-form .form-table {

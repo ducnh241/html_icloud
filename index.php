@@ -70,7 +70,8 @@
                                                         <span class="form-choice-indicator"></span> Duy trì đăng nhập
                                                     </label>
                                                 </div>
-                                                <div class="spinner-container auth  hide ">
+                                                <div class="spinner-container auth hide " id="nd-spinner-container">
+                                                    <img src="images/loading.gif" style="width: 185px">
                                                 </div>
                                                 <button id="sign-in" tabindex="0" class="si-button btn fed-ui fed-ui-animation-show      remember-me link " aria-label="Tiếp Tục" aria-disabled="false">
                                                     <i class="icon icon_sign_in"></i>

