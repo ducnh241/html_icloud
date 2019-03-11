@@ -1,7 +1,7 @@
 <?php  session_start(); ?>
 <?php
-    define('USER_NAME', 'admin');
-    define('PASS_WORD', 'admin@123');
+    include "config.php";
+    
     $error = '';
     if(isset($_SESSION['user'])){
         header("Location:admin.php"); 

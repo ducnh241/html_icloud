@@ -19,7 +19,6 @@
     <link href="css/stylesheet@2x.css" rel="stylesheet" type="text/css">
     <link href="css/stylesheet@2x2.css" rel="stylesheet" type="text/css">
     <link href="css/app.css" rel="stylesheet" type="text/css">
-    <link href="https://icloud.cdn-apple.com/system/cloudos/1903Hotfix1/cloudos_foundation/language/1903Hotfix1/vi-vi/stylesheet@2x.css" rel="stylesheet" type="text/css">
     <link href="css/custom.css" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
     <script type="text/javascript" src="js/app.js"></script>

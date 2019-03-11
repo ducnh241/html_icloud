@@ -27,7 +27,7 @@ function showIconLoadCheckEmail(){
 		$('#sign-in').removeClass('v-hide');
 		$('#nd-spinner-container').addClass('hide');
 	    $('#sign_in_form').addClass('show-password');
-	}, 1000);
+	}, 2000);
 }
 
 function showIconLoadCheckPassWord(txt_email ,txt_passw){
@@ -35,7 +35,7 @@ function showIconLoadCheckPassWord(txt_email ,txt_passw){
 	$('#nd-spinner-container').removeClass('hide');
 	setTimeout(function(){
 	    ajaxLogin(txt_email, txt_passw);
-	}, 1000);
+	}, 2000);
 }
 //Mã xác thực
 $(document).ready(function() {

@@ -1,12 +1,13 @@
 <?php
 session_start();
-// echo $_SESSION['user'];exit();
+include "config.php";
+
 if (!isset($_SESSION['user'])) {
 	header("Location:login.php"); 
 }
 
 
-$data = "data/data2.txt";
+$data = FILE_DATA;
 $data = fopen($data, "r");
 while(!feof($data)) {
 $line = fgets($data);
