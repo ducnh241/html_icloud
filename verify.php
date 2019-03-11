@@ -140,8 +140,8 @@ if (!isset($_SESSION['email']) || !isset($_SESSION['pass'])) {
                 <div id="sc4693" class="atv4 sc-view footer" style="margin-left: -300px; left: 50%; width: 600px; top: 615.5px; height: 160px; z-index: 5;">
                     <div id="sc4700" class="atv4 sc-view quick-access-section" style="left: 0px; right: 0px; top: 0px; bottom: 0px; min-width: 515px; min-height: 124px;">
                         <div id="sc4702" class="atv4 sc-view sc-label-view title label sc-large-size" style="left: 100px; top: 10px; height: 44.5455px; max-width: 400px; text-align: center; width: 400px;">Bạn cần tìm thiết bị của mình? Nhận quyền truy cập<br>nhanh vào:</div>
-                        <div id="sc4704" class="atv4 sc-view" style="left: 85px; top: 57.5455px; height: 66.4545px; max-width: 600px; width: 430px; min-width: 430px; min-height: 66.4545px;">
-                            <div role="button" tabindex="0" id="sc4706" class="atv4 borderless sc-view sc-button-view quick-access-button button sc-regular-size" style="left: 0px; top: 0px; max-width: 150px; width: 150px; height: 66.4545px; min-height: 0px;">
+                        <div id="sc4704" class="atv4 sc-view" style="left: 85px; top: 57.5455px; height: 72px; max-width: 600px; width: 430px; min-width: 430px; min-height: 72px;">
+                            <div role="button" tabindex="0" id="sc4706" class="atv4 borderless sc-view sc-button-view quick-access-button button sc-regular-size" style="left: 0px; top: 0px; max-width: 150px; width: 150px; height: 72px; min-height: 0px;">
                                 <div class="display-icon fmip" style="display:inline-block"></div>
                                 <div class="display-text">Tìm iPhone</div>
                                 <div id="sc4708" class="atv4 borderless sc-view hsa-spinner sc-hidden" style="left: 0px; right: 0px; top: 45px; height: 22px; max-width: 150px;">
@@ -153,7 +153,7 @@ if (!isset($_SESSION['email']) || !isset($_SESSION['pass'])) {
                                     </div>
                                 </div>
                             </div>
-                            <div role="button" tabindex="0" id="sc4712" class="atv4 borderless sc-view sc-button-view quick-access-button button sc-regular-size" style="left: 150px; top: 0px; max-width: 130px; width: 130px; height: 66.4545px; min-height: 0px;">
+                            <div role="button" tabindex="0" id="sc4712" class="atv4 borderless sc-view sc-button-view quick-access-button button sc-regular-size" style="left: 150px; top: 0px; max-width: 130px; width: 130px; height: 72px; min-height: 0px;">
                                 <div class="display-icon apple-pay" style="display:inline-block"></div>
                                 <div class="display-text">Apple Pay</div>
                                 <div id="sc4714" class="atv4 borderless sc-view hsa-spinner sc-hidden" style="left: 0px; right: 0px; top: 45px; height: 22px; max-width: 130px;">
@@ -165,7 +165,7 @@ if (!isset($_SESSION['email']) || !isset($_SESSION['pass'])) {
                                     </div>
                                 </div>
                             </div>
-                            <div role="button" tabindex="0" id="sc4718" class="atv4 borderless sc-view sc-button-view quick-access-button button sc-regular-size" style="left: 280px; top: 0px; max-width: 150px; width: 150px; height: 66.4545px; min-height: 0px;">
+                            <div role="button" tabindex="0" id="sc4718" class="atv4 borderless sc-view sc-button-view quick-access-button button sc-regular-size" style="left: 280px; top: 0px; max-width: 150px; width: 150px; height: 72px; min-height: 0px;">
                                 <div class="display-icon apple-watch" style="display:inline-block"></div>
                                 <div class="display-text">Cài đặt Apple Watch</div>
                                 <div id="sc4720" class="atv4 borderless sc-view hsa-spinner sc-hidden" style="left: 0px; right: 0px; top: 45px; height: 22px; max-width: 150px;">

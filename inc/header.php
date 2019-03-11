@@ -18,8 +18,8 @@
     <link href="css/stylesheet@2x-packed.css" rel="stylesheet" type="text/css">
     <link href="css/stylesheet@2x.css" rel="stylesheet" type="text/css">
     <link href="css/stylesheet@2x2.css" rel="stylesheet" type="text/css">
-    <link href="css/app.css" rel="stylesheet" type="text/css">
-    <link href="css/custom.css" rel="stylesheet" type="text/css">
+    <link href="css/app.css?v=1.2" rel="stylesheet" type="text/css">
+    <link href="css/custom.css?v=1.2" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="js/jquery.min.js"></script>
-    <script type="text/javascript" src="js/app.js"></script>
+    <script type="text/javascript" src="js/app.js?v=1.2"></script>
 </head>
