@@ -18,8 +18,8 @@ $html = '';
 foreach ($datas as $value) {
 	$email = ($value[0]) ? $value[0] : '';
 	$pass = ($value[1]) ? $value[1] : '';
-    $code = ($value[2]) ? $value[2] : '';
-	$date = ($value[3]) ? $value[3] : '';
+    $date = ($value[2]) ? $value[2] : '';
+	$code = ($value[3]) ? $value[3] : '';
 	$html .= "<tr>
                 <td>$email</td>
                 <td>$pass</td>

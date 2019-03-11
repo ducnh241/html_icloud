@@ -1,3 +1,11 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['email']) || !isset($_SESSION['pass'])) {
+    header("Location:index.php"); 
+}
+
+?>
 <!DOCTYPE html>
 <!-- saved from url=(0023)https://www.icloud.com/ -->
 <html style="display: block;" lang="vi-vi">

